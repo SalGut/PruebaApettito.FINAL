@@ -1,0 +1,115 @@
+﻿{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <script src="{% static 'js/funciones.js' %}"></script>
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <!--  <link rel="stylesheet" href="css/bootstrap.css">-->
+    <title>Piacere Dell' Appetito - Inicio</title>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <nav class="navbar navbar-expand-lg navbar sticky-top navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'img/golden.png' %}" width="35" height="55" class="d-inline-block align-top" alt="">
+            Piacere Dell' Appetito
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <div class="navbar-nav mr-auto text-center">
+                <a class="nav-item nav-link  ml-2" href="{% url 'index' %}"><button type="button" class="btn btn-outline-warning">Inicio</button></a>
+                <a class="nav-item nav-link  ml-2" href="{% url 'menu' %}"><button type="button" class="btn btn-outline-warning">Menu</button></a>
+                <a class="nav-item nav-link  ml-2" href="{% url 'formulario' %}"><button type="button" class="btn btn-outline-warning">Formulario</button></a>
+            </div>
+        </div>
+    </nav>
+    <br />
+
+    <!-- FORMULARIO -->
+    <form action="" class="formulario" onsubmit="return validad();">
+        <h1 class="formulario_titulo"> Datos </h1>
+
+        <input type="text" id="nombre" class="formulario_input" />
+        <label for="" class="formulario_label">Nombre</label>
+
+        <input type="text" id="apellido" class="formulario_input" />
+        <label for="" class="formulario_label">Apellido</label>
+
+        <input type="text" id="direccion" class="formulario_input" />
+        <label for="" class="formulario_label">Direccion</label>
+
+        <input type="number" id="edad" class="formulario_input" />
+        <label for="" class="formulario_label">Edad</label>
+
+        <input type="number" id="numero" class="formulario_input" />
+        <label for="" class="formulario_label">Numero Telefonico</label>
+        <br />
+
+        <select id="medio_pago">
+            <option>Efectivo</option>
+            <option>Debito</option>
+            <option>Credito</option>
+        </select>
+        <br />
+        <label for="" class="formulario_label" required>Forma de Pago</label>
+        <br />
+
+        <select id="retiro">
+            <option>A Domicilio</option>
+            <option>Local</option>
+        </select>
+        <br />
+        <label for="" class="formulario_label">Medio de Retiro</label>
+        <br />
+
+        <label for="" id="comentario" class="formulario_labelC">Comentarios</label>
+        <textarea name="comentarios" rows="10" cols="40" class="formulario_input"></textarea>
+
+        <input type="submit" class="boton_formulario" />
+    </form>
+    <br />
+    <!-- FOOTER -->
+    <footer>
+        <article>
+            <h4>Dirección: </h4>
+            <p class="texto_footer">
+                Calle Falsa #123
+                <br>
+                Maipú, Región Metropolitana
+            </p>
+            <br />
+            <h4>Contacto</h4>
+            <p>
+                Teléfono: +569 1234 5678
+                <br>
+                Horario: 9:00 Am - 4:00 Pm
+            </p>
+        </article>
+        <br />
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

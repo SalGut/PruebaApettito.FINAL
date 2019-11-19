@@ -1,0 +1,187 @@
+﻿{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <script src="{% static 'js/funciones.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <!--  <link rel="stylesheet" href="css/bootstrap.css">-->
+    <title>Piacere Dell' Appetito - Inicio</title>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <nav class="navbar navbar-expand-lg navbar sticky-top navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'img/golden.png' %}" width="35" height="55" class="d-inline-block align-top" alt="">
+            Piacere Dell' Appetito
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <div class="navbar-nav mr-auto text-center">
+                <a class="nav-item nav-link  ml-2" href="{% url 'index' %}"><button type="button" class="btn btn-outline-warning">Inicio</button></a>
+                <a class="nav-item nav-link  ml-2" href="{% url 'menu' %}"><button type="button" class="btn btn-outline-warning">Menu</button></a>
+                <a class="nav-item nav-link  ml-2" href="{% url 'formulario' %}"><button type="button" class="btn btn-outline-warning">Formulario</button></a>
+            </div>
+        </div>
+    </nav>
+    <br />
+
+    <!-- Carrusel-->
+    <section class="container">
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/c1.png' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>First slide label</h3>
+                            <p id="ctext">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/c2.png' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Second slide label</h3>
+                            <p id="ctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/c3.png' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Third slide label</h3>
+                            <p id="ctext">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <br />
+
+    <!--  Contenedores de Informacion  -->
+
+    <section class="container" id="inicio">
+        <div class="information-img">
+            <img src="{% static 'img/c1_opt.jpg' %}" class="center" />
+        </div>
+        <div class="information-text">
+            <h2>¿Quienes somos?</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Etiam fermentum dapibus eros, ac eleifend purus pharetra a.
+                Fusce facilisis a dui ut dignissim. In pellentesque tincidunt mattis.
+                Pellentesque efficitur non nibh et egestas.
+                Nullam faucibus, dui eget hendrerit dictum, sapien elit rutrum nisl, ut bibendum nulla ex a orci.
+                Nulla facilisi. Donec vestibulum nec dui ac porta. Aliquam non urna est.
+                Quisque vitae nisl sed turpis sagittis porttitor accumsan vitae sapien.
+            </p>
+        </div>
+    </section>
+    <br />
+    <section class="container" id="inicio">
+        <div class="information-img">
+            <img src="{% static 'img/c2_opt.jpg' %}" class="center" />
+        </div>
+        <div class="information-text">
+            <h2>¿Que ofrecemos?</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Etiam fermentum dapibus eros, ac eleifend purus pharetra a.
+                Fusce facilisis a dui ut dignissim. In pellentesque tincidunt mattis.
+                Pellentesque efficitur non nibh et egestas.
+                Nullam faucibus, dui eget hendrerit dictum, sapien elit rutrum nisl, ut bibendum nulla ex a orci.
+                Nulla facilisi. Donec vestibulum nec dui ac porta. Aliquam non urna est.
+                Quisque vitae nisl sed turpis sagittis porttitor accumsan vitae sapien.
+            </p>
+        </div>
+    </section>
+    <br />
+    <section class="container" id="inicio">
+        <div class="information-img">
+            <img src="{% static 'img/c3_opt.jpg' %}" class="center" />
+        </div>
+        <div class="information-text">
+            <h2>Somos una experiencia</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Etiam fermentum dapibus eros, ac eleifend purus pharetra a.
+                Fusce facilisis a dui ut dignissim. In pellentesque tincidunt mattis.
+                Pellentesque efficitur non nibh et egestas.
+                Nullam faucibus, dui eget hendrerit dictum, sapien elit rutrum nisl, ut bibendum nulla ex a orci.
+                Nulla facilisi. Donec vestibulum nec dui ac porta. Aliquam non urna est.
+                Quisque vitae nisl sed turpis sagittis porttitor accumsan vitae sapien.
+            </p>
+        </div>
+    </section>
+    <br />
+
+    <!--  FOOTER  -->
+    <footer>
+        <article>
+            <h4>Dirección: </h4>
+            <p class="texto_footer">
+                Calle Falsa #123
+                <br>
+                Maipú, Región Metropolitana
+            </p>
+            <br />
+            <h4>Contacto</h4>
+            <p>
+                Teléfono: +569 1234 5678
+                <br>
+                Horario: 9:00 Am - 4:00 Pm
+            </p>
+        </article>
+        <br />
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- DUDAS
+
+DUDA DE BORDE DE CAJA: solo necesitas un margin-left
+
+DUDA SOBRE IMAGEN Y TEXTO: 1 caja grande que almacene 2 cajas, la de la imagen debe tener
+                           float la direccion que quiera y la otra siguiendole y luego la
+                           gran caja darle el marco
