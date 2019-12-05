@@ -1,0 +1,7 @@
+admin django:
+
+usuario: sa.gutierrezr
+contraseña: 123pormi
+
+Integrantes:
+-Salvador Gutierrez

@@ -1,0 +1,235 @@
+﻿{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <script src="{% static 'js/funciones.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <!--  <link rel="stylesheet" href="css/bootstrap.css">-->
+    <title>Piacere Dell' Appetito - Inicio</title>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <nav class="navbar navbar-expand-lg navbar sticky-top navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'img/golden.png' %}" width="35" height="55" class="d-inline-block align-top" alt="">
+            Piacere Dell' Appetito
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <div class="navbar-nav mr-auto text-center">
+                <a class="nav-item nav-link  ml-2" href="{% url 'index' %}"><button type="button" class="btn btn-outline-warning">Inicio</button></a>
+                <a class="nav-item nav-link  ml-2" href="{% url 'menu' %}"><button type="button" class="btn btn-outline-warning">Menu</button></a>
+                <a class="nav-item nav-link  ml-2" href="{% url 'formulario' %}"><button type="button" class="btn btn-outline-warning">Formulario</button></a>
+                <a class="nav-item nav-link  ml-2" href="{% url 'login' %}"><button type="button" class="btn btn-outline-warning">Login</button></a>
+            </div>
+        </div>
+    </nav>
+    <br />
+
+
+    <!--Menu !-->
+    <section class="container mt-5 ">
+
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/plato1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chow Mein</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/plato2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Carne Mongoliana</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/plato3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cerdo Teriyaki</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/plato4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pollo con Champiñones Gargal</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/plato5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Zapallo Italiano Relleno</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/plato6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Confit de Pato</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/plato7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pad Thai</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/plato8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Escargot</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/plato9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Risotto a la Milanesa</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/plato 10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pie de Manzana</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/plato11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Paqueque de Chocolate</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/plato12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crepe Ingles</h5>
+                    <h4 class="card-title">$      </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est turpis, cursus et urna a, feugiat rhoncus ligula. Ut a hendrerit eros, varius venenatis urna.</p>
+                    <form action="formulario.html">
+                        <button type="submit" class="btn btn-warning">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <br />
+
+    <!-- FOOTER -->
+    <footer>
+        <article>
+            <h4>Dirección: </h4>
+            <p class="texto_footer">
+                Calle Falsa #123
+                <br>
+                Maipú, Región Metropolitana
+            </p>
+            <br />
+            <h4>Contacto</h4>
+            <p>
+                Teléfono: +569 1234 5678
+                <br>
+                Horario: 9:00 Am - 4:00 Pm
+            </p>
+        </article>
+        <br />
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
